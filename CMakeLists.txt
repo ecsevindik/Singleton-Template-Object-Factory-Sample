@@ -45,22 +45,16 @@ endif()
 include(include/CMakeLists.txt)
 include(src/CMakeLists.txt)
 
-add_library(ObjectFactory SHARED
+add_executable(RunSample
+    ${PROJECT_SOURCE_DIR}/main.cpp
     ${HEADERS}
     ${SOURCEFILES}
     )
 
-set_target_properties(ObjectFactory PROPERTIES LINKER_LANGUAGE CXX)
-
-
-target_include_directories( ObjectFactory PUBLIC
+target_include_directories( RunSample PUBLIC
     ${PROJECT_SOURCE_DIR}/include
     )
 
-add_executable(RunSample
-    ${PROJECT_SOURCE_DIR}/main.cpp
-    )
-
-target_link_libraries(RunSample PUBLIC
-    ObjectFactory
-    )
+# target_link_libraries(RunSample PUBLIC
+    # ObjectFactory
+    # )

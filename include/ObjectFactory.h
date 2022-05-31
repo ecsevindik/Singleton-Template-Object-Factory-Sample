@@ -1,5 +1,6 @@
 #include <map>
 #include <memory>
+#include <iostream>
 
 /*
  * Singleton template factory class 
@@ -43,7 +44,7 @@ private:
   ObjectFactory& operator=(const ObjectFactory &) = delete; // assignment operator delete
   ObjectFactory& operator=(ObjectFactory&&) = delete; // move-assignment operator delete
 
-  using AssocMap = std::map<IdentifierType, ProdutCreator>;
+  using AssocMap = std::map<IdentifierType, ObjectCreator>;
   AssocMap associations_;  
 
 };

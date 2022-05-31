@@ -1,6 +1,8 @@
+#ifndef OBJECTFACTORY_H_
+#define OBJECTFACTORY_H_
+
 #include <map>
 #include <memory>
-#include <iostream>
 
 /*
  * Singleton template factory class 
@@ -48,3 +50,5 @@ private:
   AssocMap associations_;  
 
 };
+
+#endif // OBJECTFACTORY_H_

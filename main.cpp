@@ -3,10 +3,16 @@
 int main() {
 
     std::string dogName = "Karabas";
-    auto animal_dog = AnimalFactory::Instance().CreateObject("Dog", dogName);
+    auto animalDog = AnimalFactory::Instance().CreateObject("Dog", dogName);
 
-    animal_dog->eat();
-    animal_dog->sleep();
+    animalDog->eat();
+    animalDog->sleep();
+
+    std::string sheepName = "Dolly";
+    auto animalSheep = AnimalFactory::Instance().CreateObject("Sheep", sheepName);
+
+    animalSheep->sleep();
+    animalSheep->eat();
 
     return 0;
 }

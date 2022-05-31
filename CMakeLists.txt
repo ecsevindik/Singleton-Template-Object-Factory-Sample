@@ -54,7 +54,3 @@ add_executable(RunSample
 target_include_directories( RunSample PUBLIC
     ${PROJECT_SOURCE_DIR}/include
     )
-
-# target_link_libraries(RunSample PUBLIC
-    # ObjectFactory
-    # )

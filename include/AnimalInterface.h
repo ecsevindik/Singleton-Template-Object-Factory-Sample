@@ -12,8 +12,8 @@ struct AnimalInterface {
 };
 
 // Define object factory here
-using CreateAnimal = AnimalInterface* (*)(const std::string&);
+using CreateAnimal = AnimalInterface* (*)(const std::string&); // Create function alias
 
-using AnimalFactory = ObjectFactory<AnimalInterface, std::string, CreateAnimal>;
+using AnimalFactory = ObjectFactory<AnimalInterface, std::string, CreateAnimal>; // Factory definition
 
 #endif // ANIMALINTERFACE_H_

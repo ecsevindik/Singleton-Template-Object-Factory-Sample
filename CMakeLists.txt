@@ -27,7 +27,7 @@ if (NOT CMAKE_CXX_FLAGS MATCHES "std")
     if (CMAKE_BUILD_TYPE MATCHES Debug)
         set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -O0 -Wall -Wuninitialized")
     else()
-        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -mavx2 -mxsave -mxsavec -mxsaves -O3 -Wall -Wuninitialized")
+        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -O3 -Wall -Wuninitialized")
     endif()
 endif()
 

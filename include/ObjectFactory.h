@@ -3,6 +3,7 @@
 
 #include <map>
 #include <memory>
+#include <stdexcept>
 
 /*
  * Singleton template factory class 
